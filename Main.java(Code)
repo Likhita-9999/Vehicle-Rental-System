@@ -1,0 +1,197 @@
+import java.util.Scanner;
+class Scooty{
+    Scanner sc=new Scanner(System.in);
+    float price_per_hour1;
+    int n1;
+    void set1(){
+        while(true){
+        System.out.println("Enter option 1 for Activa scooty");
+        System.out.println("Enter option 2 for Jupiter scooty");
+        System.out.println("Enter option 3 for Vespa scooty");
+        System.out.println("Enter option 4 for Ather energy(EV) scooty");
+        System.out.println("Enter your choice number");
+        n1=sc.nextInt();
+        if(n1>=1&&n1<=4){
+            break;
+        }
+        System.out.println("Invalid choice. Please try again.");
+        }
+    }
+    void price1(){
+        if(n1==1){
+            System.out.println("The price for Activa scooty is per hour is 250/-");
+            System.out.println("Enter number of hours you want");
+            float h1=sc.nextFloat();
+            price_per_hour1=h1*250;
+            System.out.println("Total amount to be payed is :"+(price_per_hour1));
+        }
+        else if (n1 == 2) {
+            System.out.println("The price for Jupiter scooty is per hour is 200/-");
+            System.out.println("Enter number of hours you want");
+            float h2=sc.nextFloat();
+            price_per_hour1=h2*200;
+            System.out.println("Total amount to be payed is :" + (price_per_hour1));
+        } else if (n1 == 3) {
+            System.out.println("The price for Vespa scooty is per hour is 300/-");
+            System.out.println("Enter number of hours you want");
+            float h3 = sc.nextFloat();
+            price_per_hour1 = h3 * 300;
+            System.out.println("Total amount to be payed is :" + (price_per_hour1));
+        } else if (n1 == 4) {
+            System.out.println("The price for Ather energy(EV) scooty is per hour is 350/-");
+            System.out.println("Enter number of hours you want");
+            float h4 = sc.nextFloat();
+            price_per_hour1 = h4 * 350;
+            System.out.println("Total amount to be payed is :" + (price_per_hour1));
+        } else {
+            System.out.println("Invalid scooty option.");
+        }
+    }
+}
+class Motorcycle{
+    Scanner sc=new Scanner(System.in);
+    int n2;
+    float price_per_hour2;
+        void set2() {
+            while(true){
+        System.out.println("Enter option 1 for Royal Enfield");
+        System.out.println("Enter option 2 for Pulsar");
+        System.out.println("Enter option 3 for KTM Duke");
+        System.out.println("Enter your choice number");
+        n2= sc.nextInt();
+         if (n2>=1&&n2<= 3) {
+                break;
+            }
+            System.out.println("Invalid choice. Please try again.");
+            }
+    }
+     void price2() {
+        if (n2== 1) {
+            System.out.println("The price for Royal Enfield is per hour is 400");
+            System.out.println("Enter number of hours you want");
+            float h1= sc.nextFloat();
+            price_per_hour2= h1 * 400;
+            System.out.println("Total amount to be payed is :" + (price_per_hour2));
+        } else if (n2== 2) {
+            System.out.println("The price for Pulsar is per hour is 350");
+            System.out.println("Enter number of hours you want");
+            float h2 = sc.nextFloat();
+            price_per_hour2= h2 * 350;
+            System.out.println("Total amount to be payed is :" + (price_per_hour2));
+        } else if (n2== 3) {
+            System.out.println("The price for KTM Duke is per hour is 450");
+            System.out.println("Enter number of hours you want");
+            float h3 = sc.nextFloat();
+            price_per_hour2= h3 * 450;
+            System.out.println("Total amount to be payed is :" + (price_per_hour2));
+        } else {
+            System.out.println("Invalid motorcycle option.");
+        }
+     }
+}
+class Car{
+    Scanner sc=new Scanner(System.in);
+     int n3;
+     float price_per_hour3;
+    void set3() {
+        while(true){
+        System.out.println("Enter option 1 for Swift");
+        System.out.println("Enter option 2 for Innova");
+        System.out.println("Enter option 3 for Thar");
+        System.out.println("Enter your choice number");
+        n3 = sc.nextInt();
+         if (n3 >= 1 && n3 <= 3) {
+                break;
+            }
+            System.out.println("Invalid choice. Please try again.");
+        }
+    }
+    void price3() {
+        if (n3== 1) {
+            System.out.println("The price for Swift is per hour is 600");
+            System.out.println("Enter number of hours you want");
+            float h1 = sc.nextFloat();
+            price_per_hour3= h1 * 600;
+            System.out.println("Total amount to be payed is :" + (price_per_hour3));
+        } else if (n3 == 2) {
+            System.out.println("The price for Innova is per hour is 900");
+            System.out.println("Enter number of hours you want");
+            float h2 = sc.nextFloat();
+            price_per_hour3 = h2 * 900;
+            System.out.println("Total amount to be payed is :" + (price_per_hour3));
+        } else if (n3== 3) {
+            System.out.println("The price for Thar is per hour is 1000");
+            System.out.println("Enter number of hours you want");
+            float h3 = sc.nextFloat();
+            price_per_hour3= h3 * 1000;
+            System.out.println("Total amount to be payed is :" + (price_per_hour3));
+        } else {
+            System.out.println("Invalid car option.");
+        }
+}
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("===Welcome to RideRent===");
+        System.out.println(" ");
+        System.out.println("Please read our below terms and conditions.");
+        System.out.println("--------------------------------");
+        System.out.println("***TERMS AND CONDITIONS***");
+        System.out.println("---------------------------------");
+        System.out.println("1. Advance payment is mandatory before rental confirmation.");
+        System.out.println("2. Any pre-existing damage must be reported before rental;");
+        System.out.println("3. The vehicle must be returned by the agreed time.");
+        System.out.println("   Late returns will incur additional charges.");
+        System.out.println("4. A valid driving license must be presented at pickup.");
+        System.out.println("5. The renter is responsible for traffic violations,");
+        System.out.println("   fines, or penalties incurred during the rental period.");
+        System.out.println("6. Fuel must be refilled to the original level before return.");
+        System.out.println("7. The vehicle must not be used for illegal activities");
+        System.out.println("8. The security deposit is refundable only after");
+        System.out.println("   inspection confirms no damage or violations.");
+        System.out.println("9. Cancellations made after confirmation may incur a fee.");
+        System.out.println(" ");
+         System.out.println("If you accept it plz press yes and continue if not press no(Yes/No)");
+         String s1=sc.nextLine();
+         int choice=0;
+    if(s1.equalsIgnoreCase("yes")){
+       System.out.println("Thank you for accepting. Let's proceed...");
+            System.out.println("Vehicles available for rent");
+            System.out.println("1. Scooty");
+            System.out.println("2. Motorcycle");
+            System.out.println("3. Car");
+            System.out.println("Please enter your choice number");
+            choice=sc.nextInt();
+    }
+    else if(s1.equalsIgnoreCase("no")){
+        System.out.println("Thank you for visiting.");
+        return;
+    }
+    else{
+        System.out.println("Please enter only Yes or No.");
+    }
+
+         switch(choice){
+             case 1:
+                Scooty obj=new Scooty();
+                obj.set1();
+                obj.price1();
+                break;
+             case 2:
+                 Motorcycle m=new Motorcycle();
+                 m.set2();
+                 m.price2();
+                 break;
+            case 3:
+                Car c=new Car();
+                c.set3();
+                c.price3();
+                break;
+            default:
+            System.out.println("It is an invalid choice..");
+            System.out.println("Please enter a valid choice...");
+         }
+    }
+}
