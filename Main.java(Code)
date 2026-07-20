@@ -178,16 +178,19 @@ public class Main {
                 Scooty obj=new Scooty();
                 obj.set1();
                 obj.price1();
+                System.out.println("Thank you!!");
                 break;
              case 2:
                  Motorcycle m=new Motorcycle();
                  m.set2();
                  m.price2();
+                 System.out.println("Thank you!!");
                  break;
             case 3:
                 Car c=new Car();
                 c.set3();
                 c.price3();
+                System.out.println("Thank you!!");
                 break;
             default:
             System.out.println("It is an invalid choice..");
